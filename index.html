@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bouncing Particles — Daniel Carranza</title>
+
+  <!-- Link to external CSS + JS (extra credit style) -->
+  <link rel="stylesheet" href="particles.css">
+  <script src="particles.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Bouncing Particle System</h1>
+    <p class="byline">by Daniel Carranza • CSW 38</p>
+  </header>
+
+  <main class="layout">
+    <section class="canvas-card">
+      <h2>Canvas Demo</h2>
+      <p class="instructions">
+        Watch the particles bounce around the canvas. Each circle has its own
+        random size, color, and speed.
+      </p>
+
+      <!-- Canvas fills most of the window -->
+      <canvas id="particleCanvas"></canvas>
+
+      <div class="controls">
+        <button id="oneParticleBtn">Show 1 Particle (Stage 1)</button>
+        <button id="manyParticlesBtn">Show 100 Particles (Stage 2)</button>
+      </div>
+    </section>
+
+    <aside class="note">
+      <h2>Reflection</h2>
+      <p>
+        This project helped me understand how the animation loop works with
+        <code>requestAnimationFrame()</code>, how to create a reusable
+        <code>Particle</code> class, and how to detect and respond to collisions
+        with the canvas edges. Randomizing the radius, color, and velocity made
+        the system feel more alive.
+      </p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <small>
+      © 2025 Daniel Carranza • Bouncing Particle System (Stage 1 & 2)
+    </small>
+  </footer>
+</body>
+</html>
